@@ -1,0 +1,4 @@
+.radio-buttons .inline {
+  display: flex;
+  flex-direction: row;
+}

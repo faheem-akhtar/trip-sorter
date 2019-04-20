@@ -1,28 +1,35 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+/*
+ * @project   Trip Sorter
+ * @author    Faheem Akhtar <faheempiscean@gmail.com>
+ *
+*/
+import React, { Component } from 'react'
+import { Switch } from 'react-router-dom'
+
+import { routes } from './routes'
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+        <Switch>
+          {routes.map((route, index) => {
+            const Layout = route.layout
+            const { layout, path, exact, main, ...rest } = route
+            return (
+              <Layout
+                key={index}
+                path={path}
+                exact={!!exact}
+                component={main}
+                {...rest}
+              />
+            )
+          })}
+        </Switch>
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App

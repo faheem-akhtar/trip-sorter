@@ -1,14 +1,52 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Roboto", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+main {
+  padding: 64px 15px 15px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+}
+.search-result {
+  padding: 15px 0;
+}
+.search-result .title {
+  background-color: #f50057;
+}
+.search-result button {
+  width: 100%;
+}
+.search-result h1 {
+  display: flex;
+  justify-content: space-between;
+}
+.search-result h1 a {
+  color: #000;
+}
+.search-result h1 a.active {
+  color: #fff;
+}
+.search-result h1 svg {
+  margin-left: 10px;
+}
+.search-result-items > div {
+  margin-bottom: 20px;
+}
+.search-result-items > div h2 {
+  display: flex;
+  justify-content: space-between;
+}
+.search-result-items .desc {
+  display: flex;
+  align-items: center;
+}
+.search-result-items .desc > * {
+  margin-right: 10px;
 }
