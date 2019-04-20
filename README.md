@@ -7,7 +7,7 @@ A react application using Dijkstra’s Algorithm to find the Cheapest and Fastes
 * Jest and Enzyme for Unit Testing `yarn test`
 * Uses Flow for type checking `yarn flow`
 * Implemented Dijkstra's algorithm to find Shortest Path.
-* Deployed on [Heroku](https://trip-sorter.herokuapp.com) server.
+* Deployed on [Heroku](https://my-tripsorter.herokuapp.com) server.
 
 ## Development
 
